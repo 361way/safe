@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>learn-java-bug</artifactId>
+    <groupId>com.xyh</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>fastjson</artifactId>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.68</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.xyh</groupId>
+      <artifactId>common</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/hikari-cp/hikari-cp -->
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>3.4.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <version>3.141.59</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.abdera/abdera-core -->
+    <dependency>
+      <groupId>org.apache.abdera</groupId>
+      <artifactId>abdera-server</artifactId>
+      <version>1.1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>1.10</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-proxy</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.xbean</groupId>
+      <artifactId>xbean-reflect</artifactId>
+      <version>4.15</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.ibatis</groupId>
+      <artifactId>ibatis-sqlmap</artifactId>
+      <version>2.3.4.726</version>
+    </dependency>
+
+    <!-- Javaee API -->
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>8.0.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.codahale.metrics/metrics-healthchecks -->
+    <dependency>
+      <groupId>com.codahale.metrics</groupId>
+      <artifactId>metrics-healthchecks</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/br.com.anteros/Anteros-Core -->
+    <dependency>
+      <groupId>br.com.anteros</groupId>
+      <artifactId>Anteros-Core</artifactId>
+      <version>1.2.1</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/br.com.anteros/Anteros-DBCP -->
+    <dependency>
+      <groupId>br.com.anteros</groupId>
+      <artifactId>Anteros-DBCP</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client-minicluster -->
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-client-minicluster</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>slide</groupId>
+      <artifactId>slide-kernel</artifactId>
+      <version>2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>cocoon</groupId>
+      <artifactId>cocoon-slide</artifactId>
+      <version>2.1.11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-core</artifactId>
+      <version>3.3.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-bundle</artifactId>
+      <version>2.7.18</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-jelly</groupId>
+      <artifactId>commons-jelly</artifactId>
+      <version>1.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-core</artifactId>
+      <version>1.5.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.caucho</groupId>
+      <artifactId>quercus</artifactId>
+      <version>4.0.63</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+      <version>2.2.5.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>5.1.6.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.1.6.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.aries.transaction</groupId>
+      <artifactId>org.apache.aries.transaction.jms</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.ignite</groupId>
+      <artifactId>ignite-jta</artifactId>
+      <version>2.8.0</version>
+    </dependency>
+  </dependencies>
+</project>
