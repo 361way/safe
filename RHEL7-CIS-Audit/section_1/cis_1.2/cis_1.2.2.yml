@@ -1,0 +1,12 @@
+{{ if .Vars.rhel7cis_level1 }}
+command:
+  {{ if .Vars.run_heavy_tests }}
+    {{ if .Vars.rhel7cis_rule_1_2_2 }}
+  repos_configured:
+    title: 1.2.2 | L1 | Ensure Package manager repositories are configured
+    exit-status: 0
+    timeout: 20000
+    exec: "yum repolist"
+    {{ end }}
+  {{ end }}
+{{ end }}

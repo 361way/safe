@@ -1,0 +1,9 @@
+{{ if .Vars.rhel8cis_rule_6_2_2 }}
+file:
+  /etc/passwd:
+    title: 6.2.2 | L1 | Ensure no legacy "+" entries exist in /etc/passwd
+    exists: true
+    contains:
+    - '!/^\+:/'
+{{ end }}
+

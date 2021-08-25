@@ -1,0 +1,11 @@
+{{ if .Vars.rhel8cis_rule_1_8_2 }}
+  {{ if .Vars.rhel8cis_gui }} 
+file:
+  /etc/gdm3/greeter.dconf-defaults:
+    title: 1.8.2 | L1 | Ensure GDM banner is configured
+    exists: true
+    contains:
+    - '/^banner-message-enable=true/'
+    - '/^banner-message-test=\'{{ .Vars.rhel8cis_warning_banner }}\''
+  {{ end }}
+{{ end }} 

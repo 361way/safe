@@ -1,0 +1,10 @@
+{{ if .Vars.rhel8cis_rule_6_1_2 }}
+command:
+  passwd_perms:
+    title: 6.1.2 | L1 | Ensure permissions on /etc/passwd are configured
+    exec:  stat -L -c "%a %U %G" /etc/passwd
+    exit-status: 0
+    stdout:
+    -  '/6[0.4][0,4] root root/'
+{{ end }}
+

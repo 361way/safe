@@ -1,0 +1,12 @@
+---
+# Post tasks
+
+- name: Perform YUM package cleanup
+  package:
+    autoremove: true
+  changed_when: no
+  ignore_errors: yes
+  tags:
+  - skip_ansible_lint
+  vars:
+    ansible_python_interpreter: /bin/python
